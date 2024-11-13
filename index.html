@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <aside>
+      <img src="imagens\logo.png" class="logo" alt="logo da marocaconect" width="80" />
+      <nav>
+        <ul class="lista-links">
+          <li>
+            <a href="#" class="link-destaque">Publicar</a>
+          </li>
+          <li>
+            <a href="#">
+              <img
+                src="./imagens/feed.svg"
+                id="areafeed"
+                alt="feed"
+                width="30px"
+              />
+              Feed
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./imagens/profile.svg" width="30px" />
+              Perfil
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./imagens/sobrenos.svg" width="30px" />
+              Sobre nós
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./imagens/sair.svg" id="sair" width="30px" />
+              Sair
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+    <main>
+      <div class="container-upload-imagem">
+        <div class="container-imagem">
+          <img src="./imagens/imagem1.svg" class="main-imagem" />
+        </div>
+        <button id="upload-botao">Carregar imagem</button>
+        <input type="file" name="" id="imagem-upload" accept="image/" style="display:none">
+        <div class="container-imagem-nome">
+          <p>imagem_projeto.png</p>
+          <img src="./imagens/close.svg" alt="close" />
+        </div>
+      </div>
+      <div class="container-descricao">
+        <h2>Novo Projeto</h2>
+        <form>
+          <div>
+            <label for="nome">Nome do Projeto</label>
+            <input type="text" id="nome" name="nome" />
+          </div>
+          <div>
+            <label for="nome">Descrição</label>
+            <textarea id="descricao" name="descricao"></textarea>
+          </div>
+          <div>
+            <label for="categoria">Tags</label>
+            <input type="text" name="categoria" id="input-tags" />
+          </div>
+          <ul class="lista-tags" id="lista-tags">
+           
+          </ul>
+          <div class="container-botoes">
+            <button class="botao-descartar">Descartar</button>
+            <button class="botao-publicar">Publicar</button>
+
+          </div>
+        </form>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
